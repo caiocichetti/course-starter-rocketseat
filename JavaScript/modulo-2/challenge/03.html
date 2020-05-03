@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 03</title>
+</head>
+<body>
+    <ul></ul>
+
+    <script>
+        var names = ['Caio', 'Diego', 'Gabriel'];
+        var listElement = document.querySelector('ul');
+
+        for (name of names) {     
+             var liElement = document.createElement('li');            
+             var textElement = document.createTextNode(name);
+
+            liElement.appendChild(textElement);
+            listElement.appendChild(liElement);
+        }
+    </script>
+</body>
+</html>

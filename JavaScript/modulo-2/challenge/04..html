@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <ul></ul>
+
+    <input type="text" name="name">
+    <button onclick="add()">Adicionar</button>
+
+    <script>
+        var names = ['Caio', 'Diego', 'Gabriel'];
+        var listElement = document.querySelector('ul');
+        var inputElement = document.querySelector('input');
+
+        function addItem(text) {
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(text);
+
+            liElement.appendChild(textElement);
+            listElement.appendChild(liElement);
+        }
+
+        function add() {
+            addItem(inputElement.value);
+            inputElement.value = "";
+        }
+        for (name of names) {     
+            addItem(name);
+        }
+    </script>
+</body>
+</html>

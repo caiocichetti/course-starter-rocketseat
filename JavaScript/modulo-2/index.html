@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Aula 2 - Trabalhando com a DOM
+      <input type="text" name="nome" />
+      <button class="botao">Adicionar</button> -->
+      <!-- Aula 3 - Lidando com elementos 
+      <input id="nome" /> -->
+      <div class="box"></div>
+    </div>
+
+    <script>
+      // Aula 2 - Trabalhando com a DOM
+      // var inputElement = document.querySelector('input[name=nome]');
+      // var btnElement = document.querySelector('button.botao');
+
+      // btnElement.onclick = function () {
+      //  var text = inputElement.value;
+
+      //   alert(text);
+      // }
+
+      // Aula 3 - Lidando com elementos
+      // var linkElement = document.createElement('a');
+
+      // linkElement.setAttribute('href', 'https://rocketseat.com.br/');
+      // linkElement.setAttribute('title', 'Site da Rocketseat');
+
+      // var textElement = document.createTextNode('Acessar site da Rocketseat');
+      // linkElement.appendChild(textElement);
+
+      // var containerElement = document.querySelector('#app');
+      // containerElement.appendChild(linkElement);
+
+      // var inputElement = document.querySelector('#nome');
+      // containerElement.removeChild(inputElement);
+
+      var boxElement = document.querySelector('.box');
+
+      boxElement.style.width = '100';
+      boxElement.style.height = '100';
+      boxElement.style.backgroundColor = '#f00';
+    </script>
+  </body>
+</html>

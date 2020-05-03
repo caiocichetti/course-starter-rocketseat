@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Javascript</title>
+</head>
+<body>
+
+  <script>
+    //MODULO 1
+    //Aula 1
+    console.log('Hello, World!');
+
+    //Aula 2
+    //Váriavel
+    var nome = "Caio";
+    var idade = 17;
+    var peso = 80;
+    var humano = true;
+
+    //Array
+    var alunos = ['Caio', 'Gabriel', 'Lucas'];
+
+    //Object
+    var aluno = {
+      nome: 'Caio',
+      idade: 17,
+      peso: 80,
+      humano: true
+    };
+
+    console.log(alunos[0]);
+    console.log(aluno.nome);
+
+    //Aula 3
+    var x = 10, y = 5;
+
+    var resultado = x + y;
+
+    //incrementar
+    // x = x + 3;
+    x += 3
+    console.log(x);
+
+    //Aula 4
+    function soma(numero1, numero2){
+      var resultado = numero1 + numero2;
+
+      return resultado;
+    }
+
+    var resultado = soma(1, 2);
+    console.log(resultado);
+
+    //Aula 5
+    function retornaSexo(sexo){
+      //M, F
+      //Masculino, Feminino 
+
+      if(sexo === 'M') {
+        return 'Masculino';
+      } else if (sexo === 'F') {
+        return 'Feminino';
+      } else {
+        return 'Outro';
+      }
+    }
+
+    function retornaSexo2(sexo){
+      switch (sexo) {
+        case 'M':
+          return 'Masculino';
+        case 'F':
+          return 'Feminino';
+        default:
+          return 'Outro';
+      }
+    }
+
+    var resultado = retornaSexo('M');
+    console.log(resultado);
+    var resultado = retornaSexo2('Teste');
+    console.log(resultado);
+
+    //Aula 6
+    //AND, OR, NOT
+    var sexo = 'M', idade = 17;
+
+    if (sexo === 'M' || idade >= 18) {
+      console.log('Ok');
+    }
+
+    var sexo = 'F';
+
+    if(sexo !== 'M') {
+      console.log('Ok');
+    }
+
+    var sexo = 'M';
+
+    var masculino;
+
+    if (sexo === 'M') {
+       masculino = true 
+    } else {
+       masculino = false;
+    }
+    
+    console.log(masculino);
+
+    //OU
+
+    var masculino = sexo === 'M';
+    console.log(masculino);
+
+    //Aula 7
+    var sexo = 'M';
+
+    var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+    console.log(retorno);
+
+    //Aula 8
+    //for, while
+    for(var i = 0; i <= 100; i++) {
+      console.log(i);
+    }
+
+    var j = 219345872;
+    while (j >= 50) {
+      console.log(j);
+      j /= 5;
+    }
+
+    //Aula 9
+    function exibeAlgo () {
+      console.log("Hello World");
+    }
+    //setInterval(exibeAlgo, 1000);
+    //setTimeout(exibeAlgo, 5000);
+  </script>
+</body>
+</html>
