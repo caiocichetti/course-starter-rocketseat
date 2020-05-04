@@ -1,3 +1,4 @@
+// Requisões AJAX
 var xhr = new XMLHttpRequest();
 
 // buscando dados da api do github
