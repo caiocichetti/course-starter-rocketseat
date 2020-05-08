@@ -1,8 +1,12 @@
 "use strict";
 
-// Mutação
-var usuario = {
-  nome: 'Caio'
-};
-usuario.nome = 'Diego';
-console.log(usuario);
+function teste(x) {
+  // variáveis de escopo
+  var y = 2;
+
+  if (x > 5) {
+    console.log(x, y);
+  }
+}
+
+teste(10);
