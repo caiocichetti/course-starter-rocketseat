@@ -1,7 +1,3 @@
-class Matematica {
-    static soma(a, b) {
-        return a + b;
-    }
-}
+const a = 1;
 
-console.log(Matematica.soma(1, 2));
+a = 3;
