@@ -1,3 +1,6 @@
-const a = 1;
+// Mutação
+const usuario = {nome: 'Caio'};
 
-a = 3;
+usuario.nome = 'Diego';
+
+console.log(usuario);
