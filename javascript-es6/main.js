@@ -1,6 +1,10 @@
-// Mutação
-const usuario = {nome: 'Caio'};
+function teste(x) {
+    // variáveis de escopo
+    let y = 2;
 
-usuario.nome = 'Diego';
+    if (x > 5) {
+        console.log(x, y);
+    }
+}
 
-console.log(usuario);
+teste(10);
