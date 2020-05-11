@@ -1,12 +1,4 @@
-function teste(x) {
-    // variáveis de escopo
-    let y = 2;
+const soma = (a = 3, b = 3) => a + b;
 
-    if (x > 5) {
-        let y = 4;
-
-        console.log(x, y);
-    }
-}
-
-teste(10);
+console.log(soma(1));
+console.log(soma());

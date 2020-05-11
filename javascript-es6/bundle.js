@@ -1,13 +1,10 @@
 "use strict";
 
-function teste(x) {
-  // variáveis de escopo
-  var y = 2;
+var soma = function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
+  return a + b;
+};
 
-  if (x > 5) {
-    var _y = 4;
-    console.log(x, _y);
-  }
-}
-
-teste(10);
+console.log(soma(1));
+console.log(soma());
