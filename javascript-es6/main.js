@@ -1,33 +1,9 @@
-const arr = [1, 3, 4, 5, 8, 9];
+const arr = [1, 3, 4, 5, 6];
 
-const newArr = arr.map(function(item, index) {
-    return item + index;
-});
+const newArr = arr.map(item => item * 2);
 
-console.log(newArr); // [1, 4, 6, 8, 12, 14]
+console.log(newArr);
 
-const sum = arr.reduce(function(total, next) {
-    return total + next; 
-    // 0
-    // 1
+const teste = () => ({ nome: 'Caio' });
 
-    // 1
-    // 3
-
-    // 4
-    // 4
-});
-
-console.log(sum); // 30
-
-const filter = arr.filter(function(item) {
-    return item % 2 === 0;
-});
-
-console.log(filter) // [4, 8]
-
-const find = arr.find(function(item) {
-    return item === 4;
-})
-
-console.log(find); // 4
+console.log(teste());
