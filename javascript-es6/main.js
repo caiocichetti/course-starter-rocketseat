@@ -1,4 +1,15 @@
-const soma = (a = 3, b = 3) => a + b;
+const usuario = {
+    nome: 'Caio',
+    idade: 17,
+    endereco: {
+        cidade: 'Campinas',
+        estado: 'SP'
+    },
+};
 
-console.log(soma(1));
-console.log(soma());
+// Desestruturando o objeto
+function mostraNome( {nome, idade} ) {
+    console.log(nome, idade);
+}
+
+mostraNome(usuario);
