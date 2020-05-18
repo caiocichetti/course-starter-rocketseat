@@ -1,3 +1,5 @@
+/* Para rodar todas resoluções abaixo necessita que você esteja com o Webpack configurado */
+
 // 1.1
 import ClasseUsuario from "./functions";
 
