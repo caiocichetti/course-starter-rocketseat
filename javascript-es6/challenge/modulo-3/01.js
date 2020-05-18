@@ -1,4 +1,4 @@
-/*Todos os exercícios abaixo necessitam que você esteja com o plugin do Async/Await do Babel e o
+/* Para rodar todas resoluções abaixo necessita que você esteja com o plugin do Async/Await do Babel e o
 babel-polyfill devidamente configurados. Em alguns exercícios é necessário instalar o Axios. */
 
 // A
