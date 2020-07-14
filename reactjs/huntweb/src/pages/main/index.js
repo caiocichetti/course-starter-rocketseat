@@ -23,7 +23,7 @@ export default class Main extends Component {
 
     return (
       <div className="product-list">
-        {this.state.products.map((product) => (
+        {products.map((product) => (
           <article key={product.id}>
             <strong>{product.title}</strong>
             <p>{product.description}</p>
@@ -31,6 +31,10 @@ export default class Main extends Component {
             <a href="">Acessar</a>
           </article>
         ))}
+        <div className="actions">
+          <button>Anterior</button>
+          <button>Próxima</button>
+        </div>
       </div>
     );
   }
