@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import api from '../../services/api';
+import api from "../../services/api";
 import { Link } from "react-router-dom";
 
-import './styles.css';
+import "./styles.css";
 
 export default class Product extends Component {
   state = {
@@ -29,7 +29,9 @@ export default class Product extends Component {
             URL: <a href={product.url}>{product.url}</a>
           </p>
           <div className="option">
-            <Link className="button-back" to="/">Voltar</Link>
+            <Link className="button-back" to="/">
+              Voltar
+            </Link>
           </div>
         </div>
       </>
